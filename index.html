@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bass.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" class="con">
+	<link rel="stylesheet" href="font/iconfont.css">
+	<link rel="stylesheet" href="font_svbzaelgnom6ajor/iconfont.css">
+	<!-- <link rel="stylesheet/less" href="less/index.less"> -->
+	 <link rel="stylesheet" type="" href="./css/index.css"> 
+	<script src="lib/less/less.js"></script>
+	
+</head>
+<body>
+<!-- 头部 -->
+	<header id="header">
+		<div class="w">
+			<div class="header-left">
+			<ul class=" clearfix">
+				<li><a href="javascript:;">小米商城</a></li>
+				<li class="line">|</li>
+				<li><a href="javascript:;">MIUI</a></li>
+				<li class="line">|</li>
+				<li><a href="javascript:;">米聊</a></li>
+				<li class="line">|</li>
+				<li><a href="javascript:;">游戏</a></li>
+				<li class="line">|</li>
+				<li><a href="javascript:;">多看阅读</a></li>
+				<li class="line">|</li>
+				<li><a href="javascript:;">云服务</a></li>
+				<li class="line">|</li>
+				<li><a href="javascript:;">小米网移动版</a></li>
+				<li class="line">|</li>
+				<li><a href="javascript:;">问题反馈</a></li>
+				<li class="line">|</li>
+				<li><a href="javascript:;">Select Region</a></li>
+			</ul>
+		</div>
+		<div class="header-right">
+			<a href="javascript:;">登录</a>
+			<span>|</span>
+			<a href="javascript:;">注册</a>
+			<a href="javascript:;" class="car">
+				<i class="iconfont">&#x343f;</i>购物车(0)
+				<div class="number"> 购物车中还没有商品，赶快选购吧！ </div>
+			</a>
+		</div>
+		</div>
+	</header>
+<!-- 导航栏 -->
+	<nav id="nav">
+		<div class="w clearfix">
+			<div class="nav-left">
+				<a href="javascript:;"><img src="img/logo.png" height="55" width="55" alt=""></a>
+			<a href="javascript:;"><img src="img/shaizi.gif" height="66" width="163" alt=""></a>
+			</div>
+			<ul class="clearfix navul">
+				
+					
+			</ul>
+			<div class="nav-right">
+				<ul class="tag">
+					<li><a href="javascript:;">红米Pro</a></li>
+					<li><a href="javascript:;">小米笔记本air</a></li>
+				</ul>
+				<input type="text" id="search" data-search-config="{'defaultWords':[{'Key':'小米6','Rst':7},{'Key':'红米Note 4X','Rst':8},{'Key':'小米MIX','Rst':1},{'Key':'小米Max2','Rst':3},{'Key':'小米手机5c','Rst':3},{'Key':'手环','Rst':6},{'Key':'耳机','Rst':19},{'Key':'充电宝','Rst':19},{'Key':'运动鞋','Rst':2},{'Key':'路由器','Rst':17},{'Key':'小米盒子','Rst':8}]}"><button><i class="iconfont">&#xe651;</i></button>
+				<ul class="keywords">
+					<!-- <li><span class="name">小米6</span><span class="number">约<i>7</i>件</span></li>
+					<li><span class="name">小米6</span><span class="number">约7件</span></li>
+					<li><span class="name">小米6</span><span class="number">约7件</span></li> -->
+					<script type="text/html" id="searchKeywords">
+					
+						<li class=""><span class="name">{{Key}}</span><span class="number">约<i>{{Rst}}</i>件</span></li>
+					
+					</script>
+				</ul>
+			</div>
+		</div>
+		<div class="hide-nav">
+			<div class="">
+				<ul class="clearfix hideul">	
+				<script type="text/html" id='hide-nav-ul'>
+					<li><a href="{{sourc}}"><img src="{{imgUrl}}" alt=""></a>
+						<p class="product">{{name}}</p>
+						<p class="price color">{{price}}</p>
+					</li>
+				</script>
+	
+				</ul>
+			</div>
+		</div>
+	</nav>
+<!-- banner区域 -->
+	<section id="banner">
+		<div class="w clearfix">
+			<ul class='sort'>
+			 </ul>
+			 <div class="catogary clearfix">
+			 
+				<div class='catogaryBox clearfix'>
+			 		
+			 		<!-- <ul class='clearfix catogaryItem'>
+			 			<li><a href="//www.mi.com/dianyuan/" class="img-text">
+				 			<img src="http://c1.mifile.cn/f/i/15/goods/sidebar/dianyuan.jpg?width=40&amp;height=40" alt="">
+				 			<span>小米移动电源</span>
+				 		</a>
+				 		<a href="" class="true buy">选购</a></li>
+
+			 		</ul> -->
+
+
+			 	</div>
+			 	<script type="text/html" id='catogary'>
+
+			 	<li><a href="{{sourceUrl}}" class="img-text">
+				 			<img src="{{imgUrl}}" alt="">
+				 			<span>{{name}}</span>
+				 		</a>
+				 		<a href="{{buyUrl}}" class="{{buyStatus}} buy" >选购</a></li>
+			 	</script>
+			 </div>
+			<div class="slide">
+			<ul class="clearfix slideUl">
+				<script type="text/html" id="slideTemplate">
+					<li><a href="{{sourceUrl}}"><img src="{{imgUrl}}" alt=""></a></li>
+				</script>
+			</ul>
+			<div class="arrow">
+				<span class="prev"><</span>
+				<span class="next">></span>
+			</div>
+		</div>
+		</div>
+	</section>
+<!-- 选购 -->
+	<section id="shop">
+		<div class="w">
+			<ul class="clearfix">
+				<li class="shopIcon">
+					<ol class='clearfix'>
+							<li><a href="javascript:;" class="br"><i class="iconfont">&#xe627;</i><p>选购手机</p></a><div class="hide"></div></li>
+						<li><a href="javascript:;" class="br"><i class="iconfont">&#xe657;</i><p> 企业团购 </p></a><div class="hide"></div></li>
+						<li><a href="javascript:; "class="b"><i class="iconfont">&#xe641;</i><p> 官方产品 </p></a></li>
+						<li><a href="javascript:;"class="r"><i class="iconfont">&#xe672;</i><p>小米移动</p></a></li>
+						<li><a href="javascript:;"class="r"><i class="iconfont">&#xe9bd;</i><p>选购手机</p></a></li>
+						<li><a href="javascript:;"><i class="iconfont">&#xe60d;</i><p>选购手机</p></a></li>					
+					</ol>	
+				</li>
+				<li class="shopPhone"><a href="javascript:;"><img src="./img/homeHero-01.jpg" height="340" width="632" alt=""></a></li>
+				<li class="shopPhone"><a href="javascript:;"><img src="./img/homeHero-02.jpg" alt=""></a></li>
+				<li class="shopPhone"><a href="javascript:;"><img src="./img/homeHero-03.jpg" alt=""></a></li>
+			</ul>
+		</div>
+	</section>
+<section id="body">
+	<div class="w clearfix">
+<!-- 只能硬件 -->
+		<div id="hardware" class='clearfix'>
+			<h3>智能硬件</h3>
+			<div class="balanceCar"><a href="javascript:;"><img src="img/hardware.jpg" height="614" width="234" alt=""></a></div>
+			<div class="goods">
+				<script type='text/html' id='hardwareTem'>
+				
+					<div class="good">
+					<div class="discountItem {{discountType}}">{{discount}}</div>
+					<a href="{{sourceUrl}}"><img src="{{imgUrl}}" alt=""><h4>{{title}}</h4><h5>{{desc}}</h5><p class="color">{{price}}元<del></del></p></a>
+				</div>
+				
+				</script>
+			
+			</div>
+		</div>
+<!-- 搭配 -->
+		<div id="groups">
+		
+		<div class='topTitle'>
+			<!-- <span>搭配</span> -->
+			<ul class="clearfix">
+				<script type="text/html" id='grouptitle'>
+					{{each subs}}
+					<li><a href="#" key="{{$value.key}}" class="">{{$value.name}}</a></li>
+					{{/each}}
+				</script>
+			</ul>
+		</div>
+
+			<div class="groups-left">
+				<ul class="clearfix">
+
+					<script type="text/html" id='groupleft'>
+						{{each leftGoods}}
+						<li><a href="{{$value.sourceUrl}}"><img src="{{@$value.imgUrl}}" alt=""></a></li>
+						{{/each}}
+					</script>
+
+				</ul>
+			</div>
+			<div class="groups-right">
+				<ul class="clearfix">
+					<script type="text/html" id='groupright'>
+						<li><a href="{{sourceUrl}}"><img src="{{imgUrl}}" alt=""><h4>{{title}}</h4><p class="color">{{price}}元</p><h5>{{heat}}</h5></a><div class="hide {{reviewStatus}}">
+						<p class="first">{{reviewDesc}}</p>
+							<p class="last">来自于{{reviewAuthor}}的评价 </p>
+						</div></li>
+					</script>
+					<script type="text/html" id='groupsLast'>
+						<li class="last" >
+							<div class="top"><a href="{{sourceUrl}}"><p class="name">{{title}}</p><p class="color">{{price}}元</p><img src="{{imgUrl}}" alt=""></a></div>
+		 					<div class="bottom">
+		 						<a href="#">
+		 							<p class="name">浏览更多</p>
+		 							<p class="color">热门</p>
+		 							<i class="iconfont">&#xe616;</i>
+		 						</a>
+		 					
+		 					</div>
+		 				</li>
+					</script>
+					<script type="text/html" id='groupdatas'>
+						{{each datas}}
+						<li><a href="{{$value.sourceUrl}}"><img src="{{$value.imgUrl}}" alt=""><h4>{{$value.title}}</h4><p class="color">{{$value.price}}元</p><h5>{{$value.heat}}</h5></a><div class="hide {{$value.reviewStatus}}">
+						<p class="first">{{$value.reviewDesc}}</p>
+							<p class="last">来自于{{$value.reviewAuthor}}的评价</p>
+						</div></li>
+						{{/each}}
+					</script>
+				</ul>
+			</div>
+		</div>
+<!-- 配件 -->
+		<div id="parts">
+			<div class='topTitle'>
+				<!-- <span>搭配</span> -->
+				<ul class="clearfix">
+				</ul>
+			</div>
+			<div class="groups-left">
+				<ul class="clearfix">
+				</ul>
+			</div>
+			<div class="groups-right">
+				<ul class="clearfix">
+				</ul>
+			</div>
+		</div>
+<!-- 周边 -->
+		<div id="around">		
+			<div class='topTitle'>
+				<!-- <span>搭配</span> -->
+				<ul class="clearfix">
+				</ul>
+			</div>
+			<div class="groups-left">
+				<ul class="clearfix">
+				</ul>
+			</div>
+			<div class="groups-right">
+				<ul class="clearfix">
+				</ul>
+			</div>
+		</div>
+<!--  为你推荐-->
+	<div id="recommend">
+		<div class="header">
+			<h3 class='recommendTitle'>为你推荐</h3>
+			<ul class="clearfix">
+				<li class="prev "><</li>
+				<li class="next">></li>
+			</ul>
+		</div>
+		<div class="recommend-body clearfix">
+			<ul class="clearfix">
+
+			<script type="text/html" id='recommendBody'>
+			{{each}}
+				<li><a href="{{$value.sourceUrl}}"><img src="{{$value.imgUrl}}" alt=""><h4>{{$value.title}}</h4><p class="color">{{$value.price}}元</p><h5>{{$value.heat}}万评价</h5></a></li>
+			{{/each}}
+			</script>
+			</ul>
+		</div>
+	</div>
+<!-- 热评产品 -->
+	<div id="hot">
+			<h3>热评产品</h3>
+			<div class="hot-body">
+				<ul class="clearfix">
+				<script type="text/html" id='hotbody'>
+				{{each}}
+					<li > <a href="{{$value.name}}"> <img class="item-image" alt="" src="{{$value.imageUrl}}"> <div > <p class="comment">{{$value.review}}</p> <p class="author">来自{{$value.author}}的评价</p> </div> <div class="describe"> <span >{{$value.name}}</span> <span >|</span> <span class='color' >{{$value.price}}元</span> </div> </a> </li>
+				{{/each}}
+				</script>
+				</ul>	
+			</div>
+	</div>
+<!-- 内容 -->
+	<div id="content">
+			<h3>内容</h3>
+			<div class="content-body">
+			 <script type="text/html" id='content-Body'>
+					{{each contents}}	
+				<div class="content-item " type='{{$value.type}}' id='{{$value.type}}'>
+					<h3 class="color">{{$value.title}}</h3>
+					<span class="prev"><</span>
+					<span class="next">></span>
+					<ul class="clearfix ul-out">
+					
+					</ul>
+					<div class="dot">
+								<span class='current'></span>
+								<span></span>
+								<span></span>
+								<span></span>
+					</div>
+				</div>
+				{{/each }}	
+			</script>  
+			<script type="text/html" id="content-Body-ul1">
+						<li>
+							<a href="{{sourceUrl}}">
+								<h4>{{title}}</h4>
+							<h5>{{desc}}</h5>
+							<p class="price">{{price}}</p>
+							<img src="{{imgUrl}}" alt="">
+							</a>
+						</li>
+			</script>
+			<script type="text/html" id="content-Body-ul2">
+						<li>	
+							<a href="{{sourceUrl}}">
+								<h4>{{desc1}}</h4>
+								<h5>{{desc2}}</h5>
+								<button class="btn">{{btnTxt}}</button>
+								<img src="{{imgUrl}}" alt="">
+							</a>
+						</li>
+			</script>
+		</div>
+	</div>
+		<!-- 视频 -->
+	<div id="vedio">
+			<h3>视频</h3>
+			<div class="video-body">
+				<ul class="clearfix">
+					
+					<script type="text/html" id="video-body">
+						{{each}}
+						<li>
+							<a href="javascript:;" data-title="{{$value.videotitle}}" data-url="{{$value.videoUrl}}">
+								<img src="{{$value.imgUrl}}" alt="">
+								<h4>{{$value.videotitle}}</h4>
+								<h5>{{$value.desc}}</h5>
+								<i class="iconfont">&#xe618;</i>
+							</a>
+						</li>
+						{{/each}}
+					</script>
+				</ul>
+			</div>
+	</div>	
+</section>
+	<!-- 底部 -->
+	<footer id="footer">
+		<div class="w">
+			<div class="foot-header">
+				<ul class="clearfix">
+					<li><a href="#"><i class="iconfont">&#xf0086;</i>1小时快修服务</a></li>
+					<li><a href="#"><i class="iconfont">&#xe638;</i>7天无条件退货</a></li>
+					<li><a href="#"><i class="iconfont">&#xe657;</i>15天免费换货</a></li>
+					<li><a href="#"><i class="iconfont">&#xe672;</i>满150元包邮</a></li>
+					<li><a href="#"><i class="iconfont">&#xe64b;</i>520余家售后网点</a></li>
+				</ul>
+			</div>
+			<div class="foot-body clearfix">
+				<div class="relative">
+					<ul class="clearfix">
+						<li>
+							<h4>帮助中心</h4>
+							<p>账户管理</p>
+							<p>购物指南</p>
+							<p>订单操作</p>
+						</li>
+						<li>
+							<h4>服务支持</h4>
+							<p>售后政策</p>
+							<p>自助服务</p>
+							<p>相关下载</p>
+						</li>
+						<li>
+							<h4>线下门店</h4>
+							<p>小米之家</p>
+							<p>服务网点</p>
+							<p>零售网点</p>
+						</li>
+						<li>
+							<h4>关于小米</h4>
+							<p>了解小米</p>
+							<p>加入小米</p>
+							<p>联系我们</p>
+						</li>
+						<li>
+							<h4>关注我们</h4>
+							<p>新浪微博</p>
+							<p>小米部落</p>
+							<p>官方微信</p>
+						</li>
+						<li >
+							<h4>特色服务</h4>
+							<p>F码通道</p>
+							<p>小米移动</p>
+							<p>防伪查询</p>
+						</li>
+						<li class="phone">
+							<h3>400-100-5678</h3>
+							<p>周一至周日 8:00-18:00</p>
+							<p>(仅收市话费)</p>
+							<button>24小时在线客服</button>
+						</li>
+					</ul>
+				</div>		
+			</div>
+		</div>
+		<div class="information clearfix">
+		<div class="w">
+				<img class="logo" src="img/logo.png" height="55" width="55" alt="">
+				<div class="center">
+					<ul class="links clearfix"> 
+					<li class="link-item"><a href="javascript:;">小米商城</a></li> <li class="line">|</li>
+					<li class="link-item"><a href="javascript:;" target="_blank">MIUI</a></li> <li class="line">|</li>
+					<li class="link-item"><a href="javascript:;" target="_blank">米聊</a></li> <li class="line">|</li>
+					<li class="link-item"><a href="javascript:;" target="_blank">多看书城</a></li> <li class="line">|</li>
+					<li class="link-item"><a href="javascript:;" target="_blank">小米路由器</a></li><li class="line">|</li> 
+					<li class="link-item"><a href="javascript:;" target="_blank">视频电话</a></li> <li class="line">|</li>
+					<li class="link-item"><a href="javascript:;" target="_blank">小米后院</a></li><li class="line">|</li>
+					 <li class="link-item"><a href="javascript:;" target="_blank">小米天猫店</a></li><li class="line">|</li>
+					  <li class="link-item"><a href="javascript:;" target="_blank">小米淘宝直营店</a></li><li class="line">|</li>
+					   <li class="link-item"><a href="javascript:;" target="_blank">小米网盟</a></li> <li class="link-item"><a href="javascript:;">问题反馈</a></li><li class="line">|</li> <li class="link-item"><a href=":void(0)">Select Region</a></li>
+				    </ul>
+				    <p>©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2014]0059-0009号</p>
+				    <p>违法和不良信息举报电话：1850130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p>
+				  
+				</div>
+				<div class="img">
+				<img src="img/v-logo-1.png" height="28" width="85" alt="">
+					    <img src="img/v-logo-2.png" height="28" width="85" alt="">
+					    <img src="img/v-logo-3.png" height="28" width="85" alt="">
+				</div>
+				</div>
+			<p class="foottitle">探索黑科技，小米为发烧而生</p>
+		</div>
+	</footer>
+
+	<div id="mask">
+		<div class="video-box">
+			<div class="header">
+				<span class="title">"红米年度品牌视频"</span>
+				<span class="close">X</span>
+			</div>
+			<iframe src="http://hd.mi.com/f/zt/hd/misc/youku.html?vid=XMTY1ODg5ODA0MA=="></iframe>
+		</div>
+	</div>
+</body>
+</html>
+<script src="lib/js/jquery-1.12.4.min.js"></script>
+<script src="lib/js/template-web.js"></script>
+<script src="js/index.js"></script>
+
+

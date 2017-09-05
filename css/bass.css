@@ -1,0 +1,66 @@
+/*
+* @Author: lisha
+* @Date:   2017-08-16 13:19:51
+* @Last Modified by:   lisha
+* @Last Modified time: 2017-08-21 09:06:30
+*/
+body,input,p,h1,h2,h3,h4,h5,h6,a,ul,li,ol,dl,button,span,div,img{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+body{
+	background-color: #f5f5f5;
+	font: 12px/150% '微软雅黑';
+}
+input,button{
+	border:0 none;
+	outline:0 none;
+}
+a{
+	text-decoration: none;
+	color: #666;
+}
+ul,ol{
+	list-style: none;
+}
+img{
+	vertical-align: bottom;
+}
+.clearfix::before,.clearfix::after{
+	content:'';
+	display: block;
+}
+.clearfix::after{
+	clear: both;
+	}
+.clearfix{
+	*zoom:1;
+}
+.bl{
+	border-left: 1px solid #ccc;
+}
+.br{
+	border-right: 1px solid #ccc;
+}
+.bt{
+	border-top: 1px solid #ccc;
+}
+.bb{
+	border-bottom: 1px solid #ccc;
+}
+.w{
+	width: 1230px;
+	margin:0 auto;
+}
+.color{
+	color:#ff6700;
+	font-size: 12px;
+}
+p{
+	text-align: center;
+}
